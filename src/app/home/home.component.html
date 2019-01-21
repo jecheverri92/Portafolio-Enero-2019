@@ -1,0 +1,293 @@
+<!-- Intro Section -->
+
+
+<!-- Intro Section -->
+
+<section mdbWavesEffect>
+
+  <div class="view  jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(/assets/back2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <!-- Mask & flexbox options-->
+    <div class="full-bg-img mask rgba-black-dark waves-light" mdbWavesEffect>
+      <!-- Content -->
+      <div class="container flex-center">
+        <div class="row pt-5 mt-3 w-100">
+          <div class="col-md-12">
+            <div class="text-center">
+              <h2 class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>Julián
+                  Echeverri Ruiz</strong></h2>
+              <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+              <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Ing. Electrónico - Web Developer</strong></h5>
+              <a mdbBtn (click)="scroll('about')" color="white" outline="true" class="wow fadeInDown waves-light"
+                data-wow-delay="0.4s" mdbWavesEffect>About me</a>
+              <a (click)="scroll('portafolio')" mdbBtn color="white" outline="true" class="wow fadeInDown waves-light"
+                data-wow-delay="0.4s" mdbWavesEffect>portfolio</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+
+</section>
+
+
+<div id="about"></div>
+<main>
+  <div class="container">
+    <section class="text-center pb-3 my-5">
+
+      <!--Grid column-->
+
+      <div class="col-lg-12 col-md- mb-lg-0 mb-4 px-5 mb-5 pb-3 wow fadeIn">
+        <!--Card-->
+        <mdb-card class="testimonial-card">
+          <!--Background color-->
+          <div mdbWavesEffect class="card-up doge-gradient waves-light"></div>
+          <!--Avatar-->
+          <div class="avatar mx-auto white">
+
+ 
+            <div class="background"></div>
+
+
+            <div id="curve" mdbWavesEffect class=" card1 circle text-center rounded-circle waves-light">
+
+              <img src="assets/people2.jpg" class="doge">
+
+
+              <div class="footer">
+                <div class="connections">
+                  <a href="https://github.com/jecheverri92" target="_blank" type="button" mdbBtn floating="true" size="sm"
+                    class="mx-1 mb-0 btn-fb connection github btn-fb1">
+                    <i class="fa fa-github"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/julian-echeverri-ruiz/" target="_blank" type="button" mdbBtn floating="true"
+                    size="sm" class="mx-1 mb-0 btn-fb connection linkedin btn-fb3">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="" target="_blank" type="button" mdbBtn floating="true" size="sm" class="mx-1 mb-0 btn-fb connection instagram btn-fb2">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+
+
+                  <div class="connection instagram">
+                    <div class="icon"></div>
+                  </div>
+                  <div class="connection twitter">
+                    <div class="icon"></div>
+                  </div>
+                  <div class="connection behance">
+                    <div class="icon"></div>
+                  </div>
+                </div>
+                <svg id="curve">
+                  <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                  <rect id="dummyRect" x="0" y="0" height="450" width="400" fill="transparent" />
+                  <!-- slide up-->
+                  <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover"
+                    end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                  <!-- slide up and curve in -->
+                  <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end"
+                    end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                  <!-- slide down and curve in -->
+                  <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end"
+                    end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                  <!-- slide down and curve out -->
+                  <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end"
+                    end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                  <!-- curve in -->
+                  <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end"
+                    end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+
+                  <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze"
+                    begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+                </svg>
+
+              </div>
+              <div class="card-blur"></div>
+            </div>
+
+
+          </div>
+          <mdb-card-body>
+
+            <h5 class="font-weight-bold dark-grey-text my-1">Julian E.</h5>
+            <h8 class="text-uppercase grey-text mb-1">
+              <strong>Web Developer</strong>
+            </h8>
+
+            <!--Quotation-->
+            <p class="dark-grey-text mt-4">
+
+              Hola, Soy Julian Echeverri. Ingeniero electronico por formacion, apasionado por el Desarrollo Web, y
+              estoy listo para nuevas oportunidades. He aprendido desarrollo web de forma autonoma con la ayuda de
+              cursos online y ha llegado el momento de aplicar todo lo que he aprendido.
+
+              He aprendido Java, JavaScript, Angular, Html, Css, Boostrap y Git. Aunque me falta mucho que aprender me
+              siento preparado para aportar y aprender en empresas de desarrollo.
+            </p>
+          </mdb-card-body>
+        </mdb-card>
+        <!--Card-->
+      </div>
+      <!--Grid column-->
+      <hr>
+
+      <!--Section: Features v.2-->
+      <section class="text-center">
+
+        <!--Section heading-->
+        <h2 class="h1 py-5 font-weight-bold wow fadeIn">Skills</h2>
+        <!--Section description-->
+        <p class="px-5 mb-5 pb-3 lead grey-text wow fadeIn">
+    
+        </p>
+
+        <!--Grid row-->
+        <div class="row text-left">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4 wow fadeIn">
+            <div class="col-1 col-md-2 float-left">
+              <i class="fab fa-html5 html5 fa-4x"></i>
+            </div>
+            <div class="col-10 col-md-9 col-lg-10 float-right">
+              <h4 class="font-weight-bold">Html 5</h4>
+              <p class="grey-text">
+                HTML 5 (formerly spelled HTML5) is a markup language used for structuring and presenting
+                content on the World Wide Web. It is the fifth and current major version of the HTML standard,
+                and subsumes XHTML.
+              </p>
+              <a mdbBtn color="warning" size="sm" href="https://es.wikipedia.org/wiki/HTML5" target="_blank" class="ml-0 waves-light"
+                mdbWavesEffect>Learn more</a>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <div class="col-md-6 mb-4 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <div class="col-1 col-md-2 float-left">
+              <i class="fab fa-js-square js fa-4x"></i>
+            </div>
+            <div class="col-10 col-md-9 col-lg-10 float-right">
+              <h4 class="font-weight-bold">Javascript</h4>
+              <p class="grey-text"> JavaScript (commonly abbreviated JS ) is an interpreted programming language ,
+                dialect of the ECMAScript standard . It is defined as object oriented , three prototype - based ,
+                imperative , weakly typed and dynamic.
+              </p>
+              <a class="ml-0 waves-light btn btn-yellow btn-sm" color="yellow" href="https://www.javascript.com/"
+                mdbbtn="" mdbwaveseffect="" size="sm" target="_blank">Learn more</a>
+            </div>
+          </div>
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4 wow fadeIn">
+            <div class="col-1 col-md-2 float-left">
+              <i class="fab fa-css3-alt css fa-4x"></i>
+            </div>
+            <div class="col-10 col-md-9 col-lg-10 float-right">
+              <h4 class="font-weight-bold">CSS 3</h4>
+              <p class="grey-text">CSS (acronym in English for C ascading S tyle S heets),
+                "Cascading Style Sheets", is a graphic design language to define and create the presentation
+                of a structured document written in a markup language . </p>
+              <a mdbBtn color="primary" size="sm" class="ml-0 waves-light" href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada"
+                target="_blank" mdbWavesEffect>Learn more</a>
+            </div>
+          </div>
+          <!--Grid column-->
+
+
+          <div class="col-md-6 mb-4 wow fadeIn">
+            <div class="col-1 col-md-2 float-left">
+              <i class="fab fa-angular red-text fa-4x"></i>
+            </div>
+            <div class="col-10 col-md-9 col-lg-10 float-right">
+              <h4 class="font-weight-bold">Angular</h4>
+              <p class="grey-text">
+                Angular (commonly called "Angular 2+" or "Angular 2"),
+                is a framework for web applications developed in TypeScript ,
+                open source , maintained by Google ,
+                which is used to create and maintain web applications on a single page .
+              </p>
+              <a mdbBtn color="danger" href="https://angular.io/" target="_blank" size="sm" class="ml-0 waves-light"
+                mdbWavesEffect>Learn more</a>
+            </div>
+          </div>
+          <!--Grid column-->
+
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+
+      <hr>
+
+        <!--APPS URL DEMOS-->
+
+        <section class="text-center pb-3" id="portfolio">
+          <div id="portafolio"></div>
+          <h2 class="font-weight-bold h1 py-5 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <strong>Personal projects</strong>
+          </h2>
+          <p class="grey-text pb-5 text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            Los siguientes proyectos personales fueron creados con propisitos academicos y demostrativos durante mi
+            proceso de formacion.
+          </p>
+          <div class="row">
+            <div class="col-md-6 mb-4 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+              <div class="card card-image waves-light" mdbwaveseffect="" style="background-image: url(assets/Budjet-Js.PNG);">
+                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+                  <div>
+                    <h6 class="green-text"><i class="far fa-laugh-beam"></i><strong> Demo - Javascript </strong></h6>
+                    <h3 class="py-3 font-weight-bold"><strong>Budget-JS</strong>
+                    </h3>
+                    <p class="pb-3"> Esta aplicacion esta desarollada en Javascript puro. Calcula su presupuesto de acuerdo a los ingresos y egresos.</p>
+                    <a class="waves-light btn btn-success btn-rounded btn-md"
+                      color="success" href="https://jecheverri92.github.io/Budget-JS/" mdbbtn="" mdbwaveseffect="" rounded="true"
+                      size="md" target="_blank"><i class="fa fa-eye left"></i> View project </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+              <div class="card card-image waves-light" mdbwaveseffect="" style="background-image: url(assets/mockuper.png);">
+                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+                  <div>
+                    <h6 class="green-text"><i class="far fa-laugh-beam"></i><strong> Demo - Angular - Bootstrap</strong></h6>
+                    <h3 class="py-3 font-weight-bold"><strong>Heroes App</strong></h3>
+                    <p class="pb-3">Aplicacion desarrollada con el framework Angular y maquetada con Bootstrap. </p><a class="waves-light btn btn-success btn-rounded btn-md"
+                    color="success" href="https://heroesappangular.herokuapp.com/heroes" mdbbtn="" mdbwaveseffect="" rounded="true"
+                    size="md" target="_blank"><i class="fa fa-eye left"></i> View project </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 mb-8 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+              <div class="card card-image waves-light " mdbwaveseffect="" style="background-image: url(assets/node.jpeg);">
+                <div class="text-white text-center d-flex align-items-center justify-content-center rgba-black-strong py-5 px-4 rounded">
+                  <div>
+                    <h6 class="orange-text"><i class="far fa-smile"></i><strong>App de Consola - NodeJS</strong></h6>
+                    <h3 class="py-3 font-weight-bold"><strong>Clima App</strong></h3>
+                    <p class="pb-3"> Aplicacion del clima Desarrollada en NodeJs, Muestra en consola la temperatura de cualquier parte del mundo.</p><a class="waves-light btn btn-deep-orange btn-rounded btn-md" color="deep-orange"
+                      href="https://github.com/jecheverri92/clima-app-node" mdbbtn="" mdbwaveseffect="" rounded="true" size="md"
+                      target="_blank"><i class="fa fa-eye left"></i> View project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+      </section>
+      <!--Projects section v.4-->
+
+
+  </div>
+
+</main>
